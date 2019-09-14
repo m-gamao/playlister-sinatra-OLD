@@ -1,7 +1,9 @@
+require 'sinatra/base'
 require 'rack-flash'
-enable :sessions
+
 
 class SongsController < ApplicationController
+ enable :sessions
  use Rack::Flash
  
   get '/songs' do
